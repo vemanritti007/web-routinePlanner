@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styling/login_signup.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="">
+            <h1>Sign Up</h1>
+
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <img class="user" src="pictures/user.png">
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Email" required>
+                <img class="user" src="pictures/user.png">
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username" required>
+                <img class="user" src="pictures/user.png">
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <img class="lock" src="pictures/lock.png">
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+                <img class="lock" src="pictures/lock.png">
+            </div>
+
+           
+            <p id="errorMsg" style="color:red; font-size:13px; margin-bottom:10px;"></p>
+
+            <button type="button" class="button" onclick="signupUser()">Sign up</button>
+
+            <div class="register-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    
+      <script src="scripts/config.js"></script>
+    <script src="scripts/signup_page_script.js"></script>
+
+</body>
+</html>

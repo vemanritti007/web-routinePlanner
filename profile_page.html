@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styling/profile_page.css" />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <div class="profile-container">
+    <div class="profile-card">
+
+      <a href="main_page.html" class="back-btn">← Back to Main Page</a>
+
+      <div class="profile-img-box">
+        <div class="picture">
+          <img
+            src="pictures/user.png"
+            alt="Profile Picture"
+            class="profile-picture"
+          />
+        </div>
+
+        <div class="change">
+          <input
+            type="file"
+            id="photoInput"
+            accept="image/*"
+            hidden
+          />
+          <button
+            type="button"
+            class="change-btn"
+            onclick="document.getElementById('photoInput').click()"
+          >
+            Change Photo
+          </button>
+        </div>
+      </div>
+
+      <h2 class="profile-name">User</h2>
+
+      <p class="email">
+        <i class="fa-solid fa-envelope"></i> email@example.com
+      </p>
+
+      <hr />
+
+      <div class="details">
+        <h3>Personal Details</h3>
+
+        <label for="fullName">Full Name</label>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Enter your name"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+        />
+
+        <button
+          type="button"
+          class="save-btn"
+          onclick="saveProfile()"
+        >
+          Save Changes
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts (ORDER MATTERS) -->
+  <script src="scripts/config.js"></script>
+  <script src="scripts/profile_page_script.js"></script>
+
+</body>
+</html>

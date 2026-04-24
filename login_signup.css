@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    paddding:0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../pictures/routine_background.jpg");
+    background-size: cover;
+    
+}   
+.container{
+    border:2px solid rgb(71, 67, 67);
+    width:420px;
+    backdrop-filter: blur(20px);
+    background:transparent;
+    color:black;
+    border-radius:12px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.container h1 {
+    font-size:36px;
+    text-align: center;
+}
+.container .input-box{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:50px;
+    margin:30px 0;
+}
+.lock{
+    top:10px;
+    right:4px;
+    position:absolute;
+    width:26px;
+    border-radius:13px;
+}
+.user{
+    top:10px;
+    right:4px;
+    position:absolute;
+    width:26px;
+    border-radius:13px
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    border:2px solid rgb(13, 1, 1);
+    border-radius:40px;
+    color:black;
+    padding-left:10px;
+
+}
+.input-box input::placeholder{
+    color:black;
+}
+.rem-forget{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size:14.6px;
+    margin-top:-15px;
+    margin-bottom:15px;
+}
+.rem-forget label input{
+    accent-color:white;
+    margin-right:3px;
+}
+.rem-forget a{
+    color:black;
+    text-decoration:none;
+}
+.rem-forget a:hover{
+    text-decoration:underline;
+}
+.register-link{
+    text-align:center;
+    font-size:14.6px;
+    margin-bottom:10px;
+}
+.register-link a{
+    color:black;
+    text-decoration:none;
+}
+.register-link a:hover{
+    text-decoration:underline;
+}
+.button{
+    width:100%;
+    background:white;
+    border:2px solid rgb(13, 1, 1);
+    height:40px;
+    border-radius:40px;
+    margin-bottom:15px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}

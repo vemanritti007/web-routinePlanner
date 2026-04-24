@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routine Planner - Main Page</title>
+    <link rel="stylesheet" href="styling/main_page_style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  
+    <div class="sidebar">
+
+        <div class="profile-box">
+           <img id="profilePic" class="profile-pic" src="pictures/user.png" alt="Profile Image">
+           <h3 id="username">User</h3>
+        </div>
+
+        <ul class="menu-list">
+           <li onclick="window.location.href='profile_page.html'">
+            <i class="fa-solid fa-user"></i> Profile
+           </li>
+
+            <li onclick="logoutUser()"><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+        </ul>
+
+    </div>
+
+    <div class="wrapper">
+
+        <h1 class="title">Routine Planner</h1>
+
+        <div class="container">
+
+            <div class="card">
+                <h2>Daily Task Manager</h2>
+
+                <div class="task-input">
+                    <input type="text" id="taskText" placeholder="Enter your task">
+                    <button onclick="addTask()">Add</button>
+                </div>
+
+                <ul id="taskList"></ul>
+            </div>
+
+            <div class="card">
+                <h2>High Priority Tasks</h2>
+
+                <div class="task-input">
+                    <input type="text" id="priorityText" placeholder="Enter high priority task">
+                    <button onclick="addPriorityTask()">Add</button>
+                </div>
+
+                <ul id="priorityList"></ul>
+            </div>
+
+            
+            <div class="card">
+                <h2>Calendar</h2>
+                <div id="calendar"></div>
+            </div>
+
+
+            <div class="card">
+                <h2>Notes</h2>
+
+                <textarea id="notesArea" placeholder="Write your notes here..."></textarea>
+                <button onclick="saveNotes()">Save Notes</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/main_page_script.js"></script>
+
+</body>
+</html>
